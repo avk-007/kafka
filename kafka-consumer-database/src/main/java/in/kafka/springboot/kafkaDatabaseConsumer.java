@@ -20,7 +20,7 @@ public class kafkaDatabaseConsumer {
 
 
 
-    @KafkaListener(topics = "wikimediaRecentChange ",groupId = "myGroup")
+    @KafkaListener(topics = "${spring.kafka.topic.name}",groupId = "myGroup")
     public void consume(String eventMessage){
         LOGGER.info(String.format("Event message received -> %s",eventMessage));
 

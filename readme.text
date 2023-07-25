@@ -1,7 +1,7 @@
 download kafka run zookeeper and server using bat file in cmd
 1- bin\windows\zookeeper-server-start.bat config\zookeeper.properties &
 2- bin\windows\kafka-server-start.bat config\server.properties
-3-bin\windows\kafka-console-consumer.bat --topic wikimediaRecentChange --bootstrap-server localhost:9092
+3- bin\windows\kafka-console-consumer.bat --topic wikimediaRecentChange --bootstrap-server localhost:9092
 create project using kafka dependency messaging
 created a module called "kafka producer-wikimedia"   of kafka
 within that created a run call with @ spring bootApplication
